@@ -163,23 +163,17 @@ def station_stats(df, month, day):
         print("Filter: Month")
     else:
         print("Filter: None")
-    # display most commonly used start station
-    
-    # to find the most commonly used start station
+    # find and display most commonly used start station
     most_common_start_station = df['Start Station'].mode()[0]
 
     print('Most Commonly Used Start Station:', most_common_start_station)
     
-    # display most commonly used end station
-    
-    # to find the most commonly used end station
+    # find and display most commonly used end station
     most_common_end_station = df['End Station'].mode()[0]
 
     print('Most Commonly Used End Station:', most_common_end_station)
 
-    # display most frequent combination of start station and end station trip
-    
-    # to find the most frequent combination of start station and end station trip
+    # find and display most frequent combination of start station and end station trip
     most_frequent_combination = (df['Start Station']+' - '+df['End Station']).mode()[0]
     print('Most Frequent Combination Of Start Station and End Station Trip:', most_frequent_combination)
 
