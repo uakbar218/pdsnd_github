@@ -249,12 +249,11 @@ def user_stats(df, city, month, day):
         print('Gender Types Count:')
         print(gender_types)
 
-        # TO DO: Display earliest, most recent, and most common year of birth
-        # earliest year of birth
+        # Display earliest year of birth
         earliest_birth_year = df['Birth Year'].min()
-        # most recent year of birth
+        # Display most recent year of birth
         most_recent_birth_year = df['Birth Year'].max()
-        # most common year of birth
+        # Display most common year of birth
         most_common_birth_year = df['Birth Year'].mode()[0]
 
         # print earliest, most recent, and most common year of birth
